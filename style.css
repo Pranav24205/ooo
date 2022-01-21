@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+*{
+
+    Margin:0px;
+
+    Padding:0px;
+
+    
+
+}
+
+body {
+
+    width:100%;
+
+    height:540px;
+
+    display:flex;
+
+    Justify-content:center;
+
+    Align-items:center;
+
+    background: url("https://i.postimg.cc/7YkBghhc/birthday-quotes-for-son-1585000842.jpg");
+
+    Background-size:360px 550px;
+
+    repeat:no-repeat ;
+
+    background-attachment:fixed;
+
+    
+
+    
+
+    
+
+}
+
+.card{
+
+    width:300px;
+
+    height:400px;
+
+   
+
+    position:fixed;
+
+    top:50px;
+
+     Transform-style:preserve-3d;
+
+     
+
+     
+
+    
+
+}
+
+.card .face{
+
+    position:absolute;
+
+    top:0px;
+
+    left:0px;
+
+    width:100%;
+
+    height:100%;
+
+     Transform-style:preserve-3d;
+
+     display:flex;
+
+    
+
+    backface-visibility:hidden;
+
+   transition:1s ease-in-out;
+
+   transform:perspective(500px) rotateY(0deg);
+
+   Backdrop-filter:blur(3px);
+
+    
+
+}
+
+.card .face.front{
+
+    background-color:yellow;
+
+    color:red;
+
+    background-color:rgba(255,255,255,0.04);
+
+    Border-radius:5px;
+
+    Border:0.02px solid black;
+
+    
+
+}
+
+.card:hover .face.front{
+
+    color:white;
+
+    transform:perspective(500px) rotateY(180deg);
+
+    
+
+}
+
+.card .face.back{
+
+    background-color:white;
+
+    Border-radius:5px;
+
+    color:red;
+
+    Border:0.01px solid white;
+
+    transform:perspective(500px) rotateY(180deg);
+
+    Flex-direction:column;
+
+       overflow:hidden; 
+
+      box-shadow: 10px 10px 16px rgb(163,177,198,0.6) inset, -10px -10px 16px    rgba(255,255,255, 0.5) inset;
+
+}
+
+.card:hover .face.back{
+
+    transform:perspective(500px) rotateY(360deg);
+
+    
+
+    
+
+}
+
+H1{
+
+   
+
+   font-family: 'Kiwi Maru', serif;
+
+   color:lime;
+
+   font-size:40px;
+
+   margin-top:120px;
+
+   text-align:center;
+
+   transform:perspective(500px) translatey(50px);
+
+   Animation:hue 10s infinite linear;
+
+-webkit-text-stroke-width: 2px;
+
+    -webkit-text-stroke-color: black;
+
+}
+
+@keyframes hue{
+
+0%{
+
+    Filter:hue-rotate(0deg);
+
+}
+
+    100%{
+
+        Filter:hue-rotate(360deg);
+
+        
+
+    }
+
+}
+
+.profile{
+
+    width:100px;
+
+    position:absolute;
+
+    Border-radius:50%;
+
+    left:90px;
+
+    top:50px;
+
+    transform:perspective(500px)  translatez(100px);
+
+    
+
+    box-shadow:0px 0px 0px 5px #4fe8af,
+
+                0px 0px 0px 10px #10c583;
+
+    Animation:hue 10s infinite linear;
+
+    animation-delay:3s;
+
+    
+
+}
+
+H2{
+
+    Text-column:center;
+
+    text-align:center;
+
+    font-family: 'Kiwi Maru', serif;
+
+    font-family: 'Londrina Solid', cursive;
+
+}
+
+P{
+
+    Padding:10px 10px 10px 10px;
+
+    color:purple;
+
+    text-align:center;
+
+    font-family: 'New Tegomin', serif;
+
+}
+
+.img-birth{
+
+    width:100%;
+
+    position:relative;
+
+    bottom:5px;
+
+    
+
+}
